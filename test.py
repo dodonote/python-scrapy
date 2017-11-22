@@ -19,6 +19,7 @@ def test():
     pdb.set_trace
     print pdb
     print b
+    print time.time()
 
 if __name__ == '__main__':
 

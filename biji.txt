@@ -2,3 +2,5 @@
 github.io 个人博客
 liquid 模版引擎，使用双中括号{{}}
 jetyll 生成html md文件
+
+建立自己的博客

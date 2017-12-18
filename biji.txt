@@ -7,3 +7,4 @@ jetyll 生成html md文件
 记录学习笔记
 
 vi pull 拉去最新
+软件设计模式 工厂模式

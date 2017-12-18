@@ -1,0 +1,62 @@
+项目：music-163
+
+来源：origin  https://github.com/RitterHou/music-163.git (push)
+知识笔记：
+
+模块 artists.py 获取 文章 id 存入 数据库
+1.python 2.7
+2.使用 requests抓取，BeautifulSoup 网页分析，存储 mysql 数据库
+3.request.get(url,params),抓取， params = {id: group_id,'initial':initial}
+
+网页分析
+soup = BeautifulSoup(r.text,'html.parser') //r.text 网页内容 r.content 二进制内容 编码 r.content.decode()
+# print hot_artists.decode('gbk','ignore').encode('utf-8')
+body = soup.body
+
+模块 album_by.py 根据 文章 id 获取 详细信息
+1.params = {'id':artist_id,'limit':'200'}
+r = requests.get(url,headers=self.headers,params=params)
+
+#网页分析
+soup = BeautifulSoup.soup(r.text,'html.parser')
+body = soup.body
+
+for 一维数组a in 二维数组b
+	try:
+		print a.i
+	except Exception e:
+		print str(i) + ':' + str(e)
+	time.sleep(5) //暂停 5秒
+
+模块 music_by_album.py 获取个人专辑
+musics = body.find('ul',attrs={'class':'f-hide'}).find_all('li')
+
+if __name__=='__main__'
+
+模块 comments_by_music.py 获取评论
+threading 进程
+pymysql.cursors mysql 游标
+
+proxies = {'http':'http://12.0.0.1:10800'}
+
+r = request.post(url,headers,params,data,proxies)
+
+#pymysql 链接
+connection = pymysql.connect(host,user,password,charset,cursorclass)
+
+t1 = threading.Thread()
+t1.start()
+
+模块 sql
+import pymysql.cursors
+
+connection = pymysql.connect(host,user,db,charset,cursorclass)
+
+def insert_comments():
+	with connection.cursor() as cursor:
+		sql = "insert into `comments` (`music_id`,`coments`,`details`) values (%s,%s,%s)"
+		cursor.execute(sql,(music_id,comments,detail))
+	connection.commit()
+
+def dis_connect():
+	connection.close()

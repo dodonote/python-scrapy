@@ -5,3 +5,5 @@ jetyll 生成html md文件
 
 建立自己的博客
 记录学习笔记
+
+vi pull 拉去最新

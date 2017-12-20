@@ -1,0 +1,7 @@
+ÏîÄ¿£ºgithub-trending
+
+1.db.py Á´½Óredis
+import redis
+REDIS=get_redis()
+REDIS.SET('kk',''.join(arr))
+REDIS.GET('kk').decode('utf-8');

@@ -34,3 +34,6 @@ flask 知识点
 1.@app.route("/") 设置路由
 
 return reder_template("index.html",argv=argv)
+
+3.github_search.py 获取信息，存入redis
+REDIS.hsetnx('repos',key,value) 不存在的时候设置内容

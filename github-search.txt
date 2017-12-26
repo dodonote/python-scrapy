@@ -17,3 +17,20 @@ app = Flask(__name__)
 @app.route('/del_repo',methods=['DELETE'])
 
 app.run()
+
+知识点：列表生成器
+1.循环列表
+>>> [x * x for x in range(1, 11)]
+[1, 4, 9, 16, 25, 36, 49, 64, 81, 100]
+
+2.二层循环
+>>> [x * x for x in range(1, 11) if x % 2 == 0]
+[4, 16, 36, 64, 100]
+
+>>> [m + n for m in 'ABC' for n in 'XYZ']
+['AX', 'AY', 'AZ', 'BX', 'BY', 'BZ', 'CX', 'CY', 'CZ']
+
+flask 知识点
+1.@app.route("/") 设置路由
+
+return reder_template("index.html",argv=argv)

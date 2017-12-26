@@ -1,0 +1,19 @@
+﻿项目：github-search
+
+1.db.py 链接redis
+import redis
+REDIS=get_redis()
+REDIS.SET('kk',''.join(arr))
+REDIS.GET('kk').decode('utf-8');
+
+2.app.py 
+
+import flask
+
+app = Flask(__name__)
+
+@app.route('/')
+
+@app.route('/del_repo',methods=['DELETE'])
+
+app.run()

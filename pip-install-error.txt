@@ -1,1 +1,2 @@
 1.安装 openpyxl（excel插件）错误，请用 pip install openpyxl==2.3.5 指定版本
+2.本地离线安装包，进入安装包文件目录 python setup.py install / pip install openpyxl

@@ -1,0 +1,12 @@
+链家地产
+https://github.com/lanbing510/LianJiaSpider
+
+1.opner url参数，获取 cookies信息
+
+2. re.compile(r'JSESSIONID=(.*)') python 正则，获取sessionid
+
+3. threading.Lock() 线程锁
+
+4. sqlite 数据库
+
+5. cookie = cookielib.CookieJar()

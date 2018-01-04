@@ -1,0 +1,9 @@
+import tools.Global as Global
+import os
+
+if not os.path.exists(path):
+	os.makedirs(path)
+f = open(file,'w')
+f.close()
+
+print 'Done';

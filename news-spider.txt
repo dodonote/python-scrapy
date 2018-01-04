@@ -1,9 +1,12 @@
 import tools.Global as Global
 import os
 
+import Global
+
 if not os.path.exists(path):
 	os.makedirs(path)
 f = open(file,'w')
+f.readline()
 f.close()
 
 print 'Done';

@@ -1,6 +1,11 @@
 # python-scrapy
 python 爬虫脚本
 
+好的项目：今日头条网易腾讯新闻 NewsSpider
+
+
+
+python 经验
 
 python zlib 压缩文件
 

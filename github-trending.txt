@@ -1,17 +1,23 @@
-项目：github-search
+print datetime.datetime,datetime.datetime.now()
+datetime.datetime.now() //时间格式 2018-01-05 12：30：00
+strdate = datetime.datetime.now().strftime('%Y-%m-%d') //输出年月日 2018-01-05
 
-1.db.py 链接redis
-import redis
-REDIS=get_redis()
-REDIS.SET('kk',''.join(arr))
-REDIS.GET('kk').decode('utf-8');
+filename = '{date}.md'.format(date=strdate) //{date} 被 strdate替换为2018-01-05.md
+format //格式替换
 
-2.import flask
 
-app = Flask(__name__)
+//os 执行 git 命令
+def git_add_commit_push(date, filename):
+    cmd_git_add = 'git add {filename}'.format(filename=filename)
+    cmd_git_commit = 'git commit -m "{date}"'.format(date=date)
+    cmd_git_push = 'git push -u origin master'
 
-@app.route('/')
+    os.system(cmd_git_add)
+    os.system(cmd_git_commit)
+    os.system(cmd_git_push)
 
-@app.route('/del_repo',methods=['DELETE'])
+assert //assert断言语句的语法格式
 
-app.run()
+assert 1==1
+assert 2+2==2*2
+assert r.status_code == 200 //如果返回不是200状态，就报错误

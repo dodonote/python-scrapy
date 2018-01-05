@@ -13,8 +13,10 @@ git remote -v 查看git远程库地址
 
 git 删除
 git rm debug.log
-git commit -m "rm debug.log"
+git commit -m "rm de=bug.log"
 git push orgin master / git push
+
+$ git reset HEAD readme.txt //撤销修改
 
 
 vi 取消操作

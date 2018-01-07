@@ -1,3 +1,10 @@
 jieba（结巴）是一个强大的分词库，完美支持中文分词，本文对其基本用法做一个简要总结。
 
-生成词云之python中WordCloud包的用法
+生成词云之python中WordCloud包的用
+
+python学习：counter计数
+
+counter = dict() 字典
+import csv
+import matplotlib.pyplot as plt
+Matplotlib.pyplot绘图实例 做图表

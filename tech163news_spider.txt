@@ -2,3 +2,12 @@
 from ..items import Tech163Item
 
 import pymongo 引入mongodb
+
+// 定义爬虫url规则
+rules = (
+		Rule(LinkExtractor(allow=r"/14/08\d+/\d+/*"),
+		callback="parse_news",follow=True),
+)
+
+strip() str.strip(' aaa ') 去除字符串两边的字符，默认为空格
+

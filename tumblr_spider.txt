@@ -1,0 +1,9 @@
+
+get 返回dict对象中的指定值
+dict = {'Name': 'Zara', 'Age': 27}
+
+print "Value : %s" %  dict.get('Age')
+print "Value : %s" %  dict.get('Sex', "Never")
+
+Python find() 方法检测字符串中是否包含子字符串 str
+str.find(str, beg=0, end=len(string))

@@ -1,3 +1,4 @@
+import queue 安装失败，用from multiprocessing import Queue代替
 
 get 返回dict对象中的指定值
 dict = {'Name': 'Zara', 'Age': 27}

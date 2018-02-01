@@ -2,3 +2,26 @@
 语法
 startswith()方法语法：
 str.startswith(str, beg=0,end=len(string));
+
+2.r.content.decode('gbk', 'ignore') 编码转化
+
+3.设置编码
+import sys
+
+reload(sys)
+sys.setdefaultencoding('utf8')
+
+4.打开文件，添加内容
+with open('failure.txt', 'a') as f:
+     f.write('%s erroe\n' % sid)
+
+5.mongoDB
+import pymongo
+
+client = pymongo.MongoClient('localhost', 27017)
+db = client['1212']
+collection_items = db['Tmall_items']
+collection_items_failure = db['Tmall_items_failure']
+collection_details = db['Tmall_details']
+
+collection_details.insert(routine)

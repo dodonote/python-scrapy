@@ -1,11 +1,72 @@
-1.set 集合
+﻿1.set 集合
+
 a = set('boy')
+
 a.add('python')
+
 set(['y','python','b','o'])
+
+
 
 
 2.Python中append和extend的区别
 
-list.append(object) 向列表中添加一个对象object
+
+list.append(object) 向列表中添加一个对象
+object
 list.extend(sequence) 把一个序列seq的内容添加到列表中
 
+
+
+3.JSON 函数
+使用 JSON 函数需要导入 json 库：import json。
+函数	描述
+json.dumps	将 Python 对象编码成 JSON 字符串
+json.loads	将已编码的 JSON 字符串解码为 Python 对象
+
+4.enumerate 枚举
+enumerate还可以接收第二个参数，用于指定索引起始值，如：
+list1 = ["这", "是", "一个", "测试"]
+for index, item in enumerate(list1, 1):
+    print index, item
+>>>
+1 这
+2 是
+3 一个
+4 测试
+
+补充
+
+如果要统计文件的行数，可以这样写：
+
+count = len(open(filepath, 'r').readlines())
+1
+这种方法简单，但是可能比较慢，当文件比较大时甚至不能工作。
+
+可以利用enumerate()：
+
+count = 0
+for index, line in enumerate(open(filepath,'r'))： 
+    count += 1
+
+5.open file
+def save(self):
+    """ 保存数据到本地 """
+    with open(self._path, "w+", encoding="utf-8") as f:
+         f_csv = csv.writer(f)
+         f_csv.writerows(self._result)
+
+6.cvs 导出
+
+with open(self._path, "r", encoding="utf-8") as f:
+      fin_csv = csv.reader(f)
+      for row in fin_csv:
+          s.add(tuple(row))
+with open("cup_all.csv", "w+", encoding="utf-8") as f:
+     fout_csv = csv.writer(f)
+     fout_csv.writerows(s)
+print(len(s))
+
+7.staticmethod 静态方法
+python staticmethod 返回函数的静态方法。
+该方法不强制要求传递参数，如下声明一个静态方法：

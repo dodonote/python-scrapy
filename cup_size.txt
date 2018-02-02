@@ -1,0 +1,4 @@
+1.set 集合
+a = set('boy')
+a.add('python')
+set(['y','python','b','o'])

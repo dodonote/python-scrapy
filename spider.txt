@@ -13,18 +13,18 @@ def mythread(site,num=20):
 
     for i in range(num):
 
-    t= ThreadUrl(queue,site)
+    	t= ThreadUrl(queue,site)
 
-    t.setDaemon(True)
+    	t.setDaemon(True)
 
-    t.start()
+    	t.start()
 
 
     for url in site.http_url():
 
-    queue.put(url)
+    	queue.put(url)
 
-    queue.join()
+    	queue.join()
 
     for ftp_url in ftp_urls:
-    print ftp_url
+    	print ftp_url

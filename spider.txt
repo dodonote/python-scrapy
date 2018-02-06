@@ -1,0 +1,30 @@
+电影网站抓取
+1.import threading
+from Queue
+
+2.thread 示例
+
+def mythread(site,num=20):
+    '''
+    num: 结合队列，跑多线程的抓取，默认线程数是20个
+    site: 这是一个关于某个站点的引用，比如 t = dytt8() 
+    '''
+    queue = Queue()
+
+    for i in range(num):
+
+    t= ThreadUrl(queue,site)
+
+    t.setDaemon(True)
+
+    t.start()
+
+
+    for url in site.http_url():
+
+    queue.put(url)
+
+    queue.join()
+
+    for ftp_url in ftp_urls:
+    print ftp_url

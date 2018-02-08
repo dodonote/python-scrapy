@@ -1,0 +1,16 @@
+python 知识点
+
+框架
+flask django Scrapy
+
+存储
+sqlite msyql redis mongo elasticsearch
+
+web服务器
+uWSGI是一个Web服务器、 Tornado、Nginx 
+
+模块
+cookies session queue队列 threading线程 proxy代理
+
+大数据
+knn kmeans 最小二次差 pandas数据分析numpy matplotlib绘图

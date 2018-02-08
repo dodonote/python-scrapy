@@ -14,3 +14,14 @@ cookies session queue队列 threading线程 proxy代理
 
 大数据
 knn kmeans 最小二次差 pandas数据分析numpy matplotlib绘图
+
+重点
+1.window 执行 python 命令
+from scrapy import cmdline      
+cmdline.execute("scrapy crawl spider".split())  window 执行 python 方法
+
+2.加载编码问题
+import sys
+
+reload(sys)
+sys.setdefaultencoding('gbk') 或 'utf8'

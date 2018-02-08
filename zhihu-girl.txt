@@ -1,0 +1,55 @@
+Bloomfilter就是将去重对象映射到几个内存“位”，通过几个位的 0/1值来判断一个对象是否已经存在。
+
+ConfigParser模块在python3中修改为configparser.这个模块定义了一个ConfigParser类，该类的作用是使用配置文件生效，配置文件的格式和windows的INI文件的格式相同
+
+由于python中默认的编码是ascii，如果直接使用open方法得到文件对象然后进行文件的读写，都将无法使用包含中文字符（以及其他非ascii码字符），因此建议使用utf-8编码。
+
+使用方法 
+
+读 
+
+下面的代码读取了文件，将每一行的内容组成了一个列表。 
+
+import codecs
+file = codecs.open('test.txt','r','utf-8')
+lines = [line.strip() for line in file] 
+file.close()
+写 
+
+下面的代码写入了一行英文和一行中文到文件中。 
+
+import codecs
+file = codecs.open('test.txt','w','utf-8')
+file.write('Hello World!\n')
+file.write('哈哈哈\n')
+file.close()
+文件读写模式 
+
+最为常见的三种模式，见下表，其中模式就是指获取文件对象时传入的参数，最常用的是前三个。  
+|模式|描述|  
+|:-:|:-:|  
+|r|仅读，待打开的文件必须存在|  
+|w|仅写，若文件已存在，内容将先被清空|  
+|a|仅写，若文件已存在，内容不会清空|  
+|r+|读写，待打开的文件必须存在|  
+|w+|读写，若文件已存在，内容将先被清空|  
+|a+|读写，若文件已存在，内容不会清空|  
+|rb|仅读，二进制，待打开的文件必须存在|  
+|wb|仅写，二进制，若文件已存在，内容将先被清空|  
+|ab|仅写，二进制，若文件已存在，内容不会清空|  
+|r+b|读写，二进制，待打开的文件必须存在|  
+|w+b|读写，二进制，若文件已存在，内容将先被清空|  
+|a+b|读写，二进制，若文件已存在，内容不会清空|
+
+random 随机数
+for i in range(1, 33):
+            # 生成0-15的整数，并将其转换为16进制形式
+            n = random.randint(0, 15)
+            # hex将整数转化为16进制形式"0xc"，取第三个字符
+            n = hex(n)
+            n = n[2]
+            cnkiUserKey += n
+            # 在第8，12，16，20个字符后面加上连字符(-)
+            if i == 8 or i == 12 or i == 16 or i == 20:
+                cnkiUserKey += "-"
+        return cnkiUserKey

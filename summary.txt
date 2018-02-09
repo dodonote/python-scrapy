@@ -33,3 +33,16 @@ xpath(): 传入xpath表达式，返回该表达式所对应的所有节点的selector list列表 。
 css(): 传入CSS表达式，返回该表达式所对应的所有节点的selector list列表.
 extract(): 序列化该节点为unicode字符串并返回list。
 re(): 根据传入的正则表达式对数据进行提取，返回unicode字符串list列表。
+
+4.yield的用法
+带有 yield 的函数不再是一个普通函数，而是一个生成器generator，可用于迭代，工作原理同上。
+
+yield 是一个类似 return 的关键字，迭代一次遇到yield时就返回yield后面(右边)的值。重点是：下一次迭代时，从上一次迭代遇到的yield后面的代码(下一行)开始执行。
+
+简要理解：yield就是 return 返回一个值，并且记住这个返回的位置，下次迭代就从这个位置后(下一行)开始。
+
+
+
+5.判断为空
+if nexturl is not None:
+	pass

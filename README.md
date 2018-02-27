@@ -674,3 +674,6 @@ vi pull 拉去最新
 好的项目：今日头条网易腾讯新闻 NewsSpider
 python 经验
 python zlib 压缩文件
+
+#模块#
+1.import sys

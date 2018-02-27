@@ -675,5 +675,23 @@ vi pull 拉去最新
 python 经验
 python zlib 压缩文件
 
-#模块#
-1.import sys
+# 模块 #
+10.zlib.decompress 解压缩文件
+
+11.模块 WordCloud 词云
+
+12.tornado web服务器
+
+13.difflib 差异比较
+
+14.jieba（结巴）是一个强大的分词库，完美支持中文分词，本文对其基本用法做一个简要总结。
+
+15.生成词云之python中WordCloud包的用
+
+16.python学习：counter计数
+
+17.import csv
+
+18.import matplotlib.pyplot as plt
+
+19.Matplotlib.pyplot绘图实例 做图表、pandas数据分析
